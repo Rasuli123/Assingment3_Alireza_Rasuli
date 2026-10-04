@@ -1,0 +1,170 @@
+/* Rasuli's Knowledge Hub - Assignment 3 */
+/* Bootstrap handles layout everywhere except #subjects. */
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background-color: #f5f7f4;
+  color: #26352f;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #173f35;
+}
+a {
+  text-decoration: none;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #b77d13;
+  outline-offset: 4px;
+}
+.navbar {
+  background-color: #12372f;
+  padding: 1rem 0;
+}
+.navbar-brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
+  color: #f4c95d;
+  white-space: normal;
+}
+.navbar .nav-link {
+  color: #fff;
+  font-weight: bold;
+}
+.navbar .nav-link:hover,
+.navbar-brand:hover {
+  color: #f4c95d;
+}
+.hero {
+  background-color: #dceee7;
+  border-bottom: 5px solid #f4c95d;
+}
+.hero .lead,
+.about-section p {
+  color: #45645a;
+}
+.photo-placeholder {
+  background-color: #edf3ee;
+  border: 2px dashed #67877a;
+  color: #45645a;
+  overflow-wrap: anywhere;
+}
+.btn-primary {
+  --bs-btn-bg: #176b5b;
+  --bs-btn-border-color: #176b5b;
+  --bs-btn-hover-bg: #0f5044;
+  --bs-btn-hover-border-color: #0f5044;
+  --bs-btn-active-bg: #0f5044;
+  --bs-btn-active-border-color: #0f5044;
+}
+.text-primary {
+  color: #176b5b !important;
+}
+
+/* TASK 1: phone first, entirely custom CSS, no Bootstrap classes. */
+.manual-section {
+  background-color: #12372f;
+  padding: 3rem 1rem;
+}
+.manual-section,
+.manual-section * {
+  box-sizing: border-box;
+}
+.manual-container {
+  max-width: 1140px;
+  margin-inline: auto;
+}
+.manual-section h2 {
+  color: #f4c95d;
+  text-align: center;
+  font-size: 1.875rem;
+  margin: 0 0 0.75rem;
+}
+.manual-intro {
+  text-align: center;
+  color: #d8e6e1;
+  margin: 0 0 2rem;
+}
+.subject-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+}
+.subject-card {
+  background-color: #fff;
+  border: 2px solid #d7e4df;
+  padding: 1.5rem;
+  border-radius: 0.875rem;
+  overflow-wrap: anywhere;
+}
+.subject-card:hover {
+  border-color: #f4c95d;
+}
+.subject-card h3 {
+  color: #176b5b;
+  font-size: 1.375rem;
+  margin: 0 0 0.75rem;
+}
+.subject-card p {
+  color: #586b64;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .manual-section {
+    padding: 4rem 1.5rem;
+  }
+  .manual-section h2 {
+    font-size: 2.25rem;
+  }
+  .subject-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .manual-section {
+    padding: 5rem 2rem;
+  }
+  .manual-section h2 {
+    font-size: 2.5rem;
+  }
+  .subject-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.875rem;
+  }
+}
+
+/* TASK 2: appearance only; Bootstrap supplies the responsive layouts. */
+.resource-card {
+  border: 0;
+  border-top: 5px solid #f4c95d;
+  border-radius: 0.75rem;
+}
+.resource-card .card-text {
+  color: #5b6d66;
+}
+.accordion-button {
+  background-color: #dceee7;
+  color: #173f35;
+  font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #dceee7;
+  color: #173f35;
+}
+.accordion-body {
+  color: #52665e;
+}
+footer {
+  background-color: #0d2923;
+  border-top: 5px solid #f4c95d;
+}
+footer h2 {
+  color: #f4c95d;
+}
+footer p {
+  color: #cbd9d4;
+}

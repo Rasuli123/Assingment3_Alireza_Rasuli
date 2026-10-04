@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rasuli's Knowledge Hub</title>
+  <meta name="description" content="An academic hub for programming, science, mathematics and study resources.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Bootstrap navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Rasuli's Knowledge Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#subjects">Subjects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+  <!-- Bootstrap hero section -->
+  <header id="home" class="hero">
+    <div class="container py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+          <p class="text-primary fw-bold mb-2">WELCOME TO THE HUB</p>
+          <h1 class="display-4 fw-bold">Learn. Explore. Build.</h1>
+          <p class="lead">Rasuli's Knowledge Hub is a simple academic space for programming, science, mathematics and useful study resources.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#subjects" class="btn btn-primary">Explore Subjects</a>
+            <a href="#about" class="btn btn-outline-dark">Learn More</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5 text-center">
+          <img src="images/library.png" class="img-fluid rounded shadow-sm" alt="Sunlit university library with wooden bookshelves and a reading table" width="1536" height="1024" fetchpriority="high">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Bootstrap two-column section -->
+  <section id="about" class="about-section py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-md-6 order-1 order-md-2">
+          <h2 class="fw-bold">About the Hub</h2>
+          <p>Knowledge Hub brings different academic topics into one organized place. The goal is to make study materials easy to find and easy to use.</p>
+          <p class="d-none d-md-block">The page also demonstrates responsive web design by changing its layout at different screen sizes.</p>
+          <span class="badge text-bg-success">Responsive Learning</span>
+        </div>
+        <div class="col-12 col-md-6 order-2 order-md-1 text-center">
+          <img src="images/study.png" class="img-fluid rounded shadow-sm" alt="Open textbook and notebook on a library study desk beside a window" width="1536" height="1024" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TASK 1: hand-written responsive section. No Bootstrap layout classes here. -->
+  <section id="subjects" class="manual-section">
+    <div class="manual-container">
+      <h2>Study Subjects</h2>
+      <p class="manual-intro">Explore a subject and take the next step in your learning.</p>
+      <div class="subject-grid">
+        <article class="subject-card">
+          <h3>Programming</h3>
+          <p>Practice HTML, CSS and basic programming ideas.</p>
+        </article>
+        <article class="subject-card">
+          <h3>Mathematics</h3>
+          <p>Review formulas, problem solving and logical thinking.</p>
+        </article>
+        <article class="subject-card">
+          <h3>Science</h3>
+          <p>Explore important concepts from different science subjects.</p>
+        </article>
+        <article class="subject-card">
+          <h3>Economics</h3>
+          <p>Study basic ideas about markets, money and global systems.</p>
+        </article>
+        <article class="subject-card">
+          <h3>Technology</h3>
+          <p>Learn how modern digital systems support everyday work.</p>
+        </article>
+        <article class="subject-card">
+          <h3>Study Skills</h3>
+          <p>Use simple methods to organize notes, time and revision.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap cards -->
+  <section id="resources" class="resources-section py-5">
+    <div class="container">
+      <div class="d-flex flex-wrap gap-3 justify-content-between align-items-center mb-4">
+        <div>
+          <h2 class="fw-bold mb-1">Featured Resources</h2>
+          <p class="mb-0 text-secondary">Useful starting points for your next study session.</p>
+        </div>
+        <span class="badge text-bg-dark d-none d-md-inline">Bootstrap 5.3</span>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card resource-card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5 card-title">HTML & CSS</h3>
+              <p class="card-text">Build clean page structures and responsive styles.</p>
+              <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content" class="btn btn-sm btn-primary">Learn HTML</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card resource-card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5 card-title">Bootstrap Grid</h3>
+              <p class="card-text">Practice containers, rows, columns and breakpoints.</p>
+              <a href="https://getbootstrap.com/docs/5.3/layout/grid/" class="btn btn-sm btn-primary">Read Grid Guide</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card resource-card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5 card-title">Study Planning</h3>
+              <p class="card-text">Organize your study time into small practical goals.</p>
+              <a href="#studyPlanning" class="btn btn-sm btn-primary" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="studyPlanning">View Study Tips</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap accordion component -->
+  <section id="questions" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-9">
+          <h2 class="fw-bold mb-4">Quick Questions</h2>
+          <div class="accordion" id="knowledgeAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#questionOne" aria-expanded="true" aria-controls="questionOne">What is the purpose of the hub?</button>
+              </h3>
+              <div id="questionOne" class="accordion-collapse collapse show" data-bs-parent="#knowledgeAccordion">
+                <div class="accordion-body">It organizes simple academic topics and study resources in one responsive page.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">Which responsive methods are used?</button>
+              </h3>
+              <div id="questionTwo" class="accordion-collapse collapse" data-bs-parent="#knowledgeAccordion">
+                <div class="accordion-body">The Study Subjects section uses my own CSS media queries. The other sections mainly use Bootstrap's grid and utility classes.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#studyPlanning" aria-expanded="false" aria-controls="studyPlanning">How can I plan a study session?</button>
+              </h3>
+              <div id="studyPlanning" class="accordion-collapse collapse" data-bs-parent="#knowledgeAccordion">
+                <div class="accordion-body">Choose one specific goal, divide it into small tasks, and set aside time to practice. Finish by recalling what you learned without looking at your notes and listing what to review next.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Bootstrap contact/footer -->
+  <footer id="contact" class="text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-8">
+          <h2 class="h4">Rasuli's Knowledge Hub</h2>
+          <p class="mb-0">A responsive academic page created for Assignment #3.</p>
+        </div>
+        <div class="col-12 col-md-4 text-md-end">
+          <p class="mb-1">Student: Alireza Rasuli</p>
+          <p class="mb-0">Web Technologies</p>
+        </div>
+      </div>
+      <hr>
+      <p class="small mb-0">© 2026 Rasuli's Knowledge Hub</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

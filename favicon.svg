@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Rasuli Knowledge Hub book icon</title>
+  <rect width="64" height="64" rx="14" fill="#12372f"/>
+  <path d="M10 16c8-2 15-1 22 4 7-5 14-6 22-4v32c-8-2-15-1-22 4-7-5-14-6-22-4Z" fill="#f4c95d"/>
+  <path d="M32 21v29M16 25c4-1 8 0 11 2m-11 7c4-1 8 0 11 2m10-9c3-2 7-3 11-2m-11 11c3-2 7-3 11-2" fill="none" stroke="#12372f" stroke-width="3" stroke-linecap="round"/>
+</svg>
